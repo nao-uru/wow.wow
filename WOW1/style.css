@@ -1,0 +1,255 @@
+body {
+    width: 70.6em;
+    min-width: 990px;
+    margin-right: auto;
+    margin-left: auto;
+    min-height: 100vh;
+    display: grid;
+    grid-template: 
+    "header header header" 500px
+    "center center left" 1fr
+    "footer footer footer" 200px
+    /         2fr    1fr;
+    background-color: #eeeeee;
+}
+
+header {
+    grid-area: header;
+    background-color: rgb(92, 86, 86);
+}
+
+.backimg h2 {
+    margin-top: 10px;
+    text-align: center;
+    padding-top: 160px;
+    color: #fff;
+    font-size: 35px;
+}
+
+.backimg {
+    background-image: url(2020-05-21_08-35-32_469\ \(1\).jpeg);
+    height: 480px;
+    width: 650px;
+    background-size: contain;
+    opacity: 0.6;
+    margin: 0 auto;
+    
+}
+
+.title {
+    background-color: rgb(92, 86, 86,0.8);
+    border-radius: 5px;
+    padding: 25px;
+    font-size: 30px;
+    color: #fff;
+    margin-left: 10px;
+}
+
+.intro {
+    border: 2px dotted black;
+    padding: 10px;
+    margin: 10px 30px 10px 30px;
+}
+
+main {
+    grid-area: center;
+}
+
+.person img {
+    text-align: left;
+    margin: 0 20px 0 auto;
+    width: 250px;
+    height: 200px;
+    border-radius: 5px;
+}
+
+.person p {
+    font-size: 20px;
+}
+
+.person h3 {
+    margin: 10px 10px 10px 30px;
+}
+
+.person h3::first-letter {
+    font-size: 30px;
+}
+
+.person {
+    color: #fff;
+    margin: 10px 30px 10px 30px;
+}
+
+.chihi {
+    background-color: rgb(196, 95, 95,0.5);
+    display: flex;
+    border-radius: 5px;
+}
+
+.shi {
+    display: flex;
+    background-color: rgb(197, 143, 42,0.5);
+    border-radius: 5px;
+}
+
+.mayu {
+    display: flex;
+    background-color: rgba(214, 214, 77, 0.5);
+    border-radius: 5px;
+}
+
+.aya {
+    display: flex;
+    background-color: rgba(15, 134, 67, 0.5);
+    border-radius: 5px;
+}
+
+.mai {
+    display: flex;
+    background-color: rgb(148, 73, 148,0.5);
+    border-radius: 5px;
+}
+
+.nao {
+    display: flex;
+    background-color: rgb(76, 103, 185,0.5);
+    border-radius: 5px;
+}
+
+.card {
+    text-decoration: none;
+}
+
+
+aside {
+    grid-area: left;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin-right: 20px;
+    width: 250px;
+    margin: 20px 20px 10px 20px;
+    padding-bottom: 100px;
+}
+
+ul li {
+    border: none;
+    background-color: rgb(92, 86, 86,0.8);
+    text-align: center;
+    height: 35px;
+    color: #fff;
+    border: 1px dotted;
+    border-radius: 5px;
+}
+
+.other {
+    background-color: rgb(221, 160, 221,0.8);
+}
+
+.history {
+    color: #fff;
+    margin: 10px 30px 10px 30px;
+}
+
+.history img {
+    width: 250px;
+    height: 200px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+.malaysia {
+    display: flex;
+    flex-direction: column;
+    background-color: gray;
+    margin: 10px;
+}
+
+.cebu {
+    display: flex;
+    flex-direction: column;
+    background-color: grey;
+    margin: 10px;
+}
+
+
+.maphotos {
+    
+}
+
+.cebuphotos {
+    display: flex;
+}
+
+
+footer {
+    grid-area: footer;
+    background-color:  rgb(92, 86, 86);
+    text-align: center;
+    margin-top: 30px;
+    color: #fff;
+}
+
+footer p {
+    font-size: 20px;
+}
+
+footer a {
+    padding: 10px 30px 10px 30px;
+    color: #ffff;
+    text-decoration: none;
+    background-color: pink;
+    border: none;
+    border-radius: 5px;
+}
+
+@media screen and (max-width:680px) {
+    body {
+        display: grid;
+        grid-template: 
+        "header"
+        "center"
+        "footer"
+        "left";
+    }
+
+    .title {
+        width: 100%;
+        margin: 0;
+    }
+
+    .person {
+        width: 100%;
+    }
+
+    aside {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        bottom: 0;
+        margin: 0;
+    }
+
+    ul {
+        display: flex;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    li {
+        flex: 1;
+    }
+
+    .other {
+        line-height: 17px;
+    }
+
+    footer {
+
+        margin:0 0  37px 0;
+        width: 100%;
+    }
+}
