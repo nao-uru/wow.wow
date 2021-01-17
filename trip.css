@@ -1,0 +1,108 @@
+body {
+  font-family: 'Fanklin Gothic Medium';
+  box-sizing: border-box;
+  margin: 0;
+  background-color: #eee;
+}
+
+.container {
+  /* position: relative; */
+  margin: 0 auto;
+  width: 90%;
+  border: 3px solid rgb(136, 127, 127);
+  padding: 15px;
+  background-color: white;
+  /* background-image: url("back.imgs/malaysia.png");
+  background-repeat: no-repeat;
+  background-size: 600px 450px;
+  background-position: bottom;
+  background-color:rgba(255,255,255,0.8);
+  background-blend-mode:lighten; */
+}
+
+.title {
+  background-color: rgb(136, 127, 127);
+  border-radius: 5px;
+  padding: 25px;
+  font-size: 2em;
+  color: #fff;
+}   
+
+table {
+  background-color: #eee;
+  color: rgb(92, 86, 86);
+  width: 80%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+section {
+  margin-bottom: 30px;
+}
+
+section ul {
+  color: rgb(92, 86, 86);
+  background-color: #eee;
+  padding: 10px;
+}
+
+section ul li {
+  list-style: none;
+}
+
+li p {
+  border-bottom: 2px solid rgb(92, 86, 86);
+  padding: 5px;
+}
+
+.feed img {
+  width: 30%;
+  margin-right: 20px;
+}
+
+.feed {
+  display: flex;
+  padding: 10px;
+}
+
+.day1,.day2,.day3,.day4,.day5 {
+  border-radius: 5px;
+  padding: 15px;
+  font-size: 1.2em;
+  color: #fff;
+} 
+
+.day1,.day4 {
+  background-color: rgb(64, 64, 167);
+}
+
+.day2,.day5 {
+  background-color: rgb(187, 57, 57);
+}
+
+.day3 {
+  background-color: rgba(165, 165, 52, 0.884);
+}
+
+menu {
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  height: 60px;
+  width: 50%;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+menu a {
+  color: #fff;
+  background-color: rgba(136, 127, 127, 0.7);
+  border-radius: 10px;
+  display: block;
+  border:2px dotted rgb(92, 86, 86);
+  width: 100%;
+  padding-top: 15px;
+  margin-left: 2px;
+  text-decoration: none;
+}
